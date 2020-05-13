@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
 </head>
 <body>
     <form action="#">
@@ -17,6 +27,7 @@
 
         <!-- Para efectos de claridad y legibilidad se va a usar solo una de las formas -->
 
+        <!-- TIPO TEXTO -->
         <fieldset>
             <legend>type="text"</legend>
 
@@ -31,13 +42,16 @@
             <input type="text" id="name">
         </fieldset>
 
+        <!-- TIPO NUMBER -->
         <fieldset>
             <legend>type="number"</legend>
+            <!-- Da igual el valor que se ingrese, mientras sea un número, las flechas que muestra por defecto este campo siempre sumarán o restarán uno al valor que ya tenga el campo -->
 
             <label for="age">Edad:</label>
             <input type="number" id="age">
         </fieldset>
 
+        <!-- TIPO PASSWORD -->
         <fieldset>
             <legend>type="password"</legend>
 
@@ -47,6 +61,7 @@
             <input type="password" id="pass">
         </fieldset>
 
+        <!-- TIPO SUBMIT -->
         <fieldset>
             <legend>type="submit"</legend>
             <!-- Hay 3 formas de añadir botones de tipo submit en los formularios -->
@@ -62,6 +77,7 @@
             <button>Send form</button>
         </fieldset>
 
+        <!-- TIPO RESET -->
         <fieldset>
             <legend>type="reset"</legend>
             <!-- Hay 3 formas de añadir botones de tipo reset en los formularios -->
@@ -74,6 +90,8 @@
             <!-- O un botón de tipo reset -->
             <button type="reset">Reset</button>
         </fieldset>
+
+        <!-- TIPO RADIO -->
         <fieldset>
             <legend>type="radio"</legend>
             <!-- Los inputs de tipo radio se utilizan para elegir una opción entre varias opciones -->
@@ -86,6 +104,7 @@
             <input type="radio" name="sex" id="woman">
         </fieldset>
 
+        <!-- TIPO CHECKBOX -->
         <fieldset>
             <legend>type="checkbox"</legend>
             <!-- Igual que los de tipo radio, deben tener el mismo valor en el atributo "name", pero con la diferencia que aquí sí se puede elegir más de una opción de todas las disponibles, o ninguna. -->
@@ -98,6 +117,63 @@
 
             <label for="js">JS</label>
             <input type="checkbox" name="hobbies" id="js">
+        </fieldset>
+
+        <!-- TIPO DATE -->
+        <fieldset>
+            <legend>type="date"</legend>
+            <!-- El de tipo date mostrará un calendario normal con los meses y demás, "months" con los meses y "week" un calendario con las semanas. Cada navegador tiene su manera propia de mostrar dichos calendarios, y es muy dificil estilizarlos con CSS ya que no tienen atributos accesibles desde CSS.  -->
+
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="date">
+
+            <label for="month">Meses</label>
+            <input type="month" name="month" id="month">
+
+            <label for="week">Semanas</label>
+            <input type="week" name="week" id="week">
+
+            <label for="time">Horas</label>
+            <input type="time" name="time" id="time">
+        </fieldset>
+
+        <!-- TIPO COLOR -->
+        <fieldset>
+            <legend>type="color"</legend>
+            <!-- Devuelve un color como valor, lo más común es usarlo por medio javascript para capturar el color elegido por el usuario y así hacer algo con ese color. -->
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+
+        <!-- TIPO EMAIL -->
+        <fieldset>
+            <legend>type="email"</legend>
+            <!-- El input de tipo email valida que exista un @ y un .com -->
+            <!-- Pero al igual que en password, puedes acceder a las propiedades del input por medio del inspector del navegador y cambiar los atributos del input -->
+            <!-- Para evitar eso es conveniente validar por Javascript y en el Backend -->
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+
+        <!-- TIPO FILE -->
+        <fieldset>
+            <legend>type="file"</legend>
+            <!-- Este input por sí solo desde html no hace nada -->
+            <!-- Se necesita al menos javascript para ya sea enviar el archivo al servidor o mostrarlo en pantalla o lo que sea que se deba hacer con él -->
+
+            <label for="file">Subir archivo</label>
+            <input type="file" name="file" id="file">
+        </fieldset>
+
+        <!-- TIPO RANGE -->
+        <fieldset>
+            <legend>type="range"</legend>
+            <!-- Los inputs de tipo rango muestran un slide con el que se puede elegir un valor entre un rango-->
+            <!-- Por defecto avanza de uno en uno pero si se añade el atributo "step" se le puede asignar de cuanto en cuanto se necesita que avance -->
+
+            <label for="range">Rango</label>
+            <input type="range" name="range" id="range" min="0" max="100" step="10">
         </fieldset>
     </form>
 </body>
