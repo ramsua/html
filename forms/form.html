@@ -42,7 +42,23 @@
             <legend>Input type="password"</legend>
 
             <label for="pass">Password:</label>
+
+            <!-- Con los inputs de tipo password es recomendable validar en javascript y en el servidor para así reducir los ataques de seguridad -->
             <input type="password" id="pass">
+        </fieldset>
+        <fieldset>
+            <legend>Botones</legend>
+            <!-- Hay 3 formas de añadir botones en los formularios -->
+
+            <!-- Un input de tipo submit -->
+            <!-- Si no se especifica un "value" por defecto se le asigna "Enviar consulta" -->
+            <input type="submit" value="Send">
+
+            <!-- Un input de tipo image -->
+            <input type="image" src="#" alt="Texto alternativo">
+
+            <!-- Y un boton "<button></button>" de tipo submit -->
+            <button>Send form</button>
         </fieldset>
     </form>
 </body>

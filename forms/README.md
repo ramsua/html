@@ -1,6 +1,6 @@
 # Formularios en HTML5
 
-## Etiquetas
+## Etiquetas y atributos
 
 * `form` - Encierra todos los campos del formulario
 * `label` - Representa el nombre del campo
@@ -28,10 +28,15 @@
   * `time` - Permite seleccionar una hora
   * `url` - Crea un campo para introducir una url
 
-### `label, input`
+### Etiquetas
 
-  Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.
+| `label, input` | Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.
 
-### `input type="text"`
-  
-  Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto
+### Atributos
+
+| `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto.
+| `password` | No encripta el texto introducido, solo lo oculta cambiándolo por asteríscos.
+| `submit` | Envia el formulario, deja vacío los campos del formulario y recarga la página.
+| `button` | Igual que `submit`.
+| `image` | Igual que `submit`. Hay que añadirle el atributo `src` con la ruta de la imágen.
+| `<button></button>` | Si no se especicfica `type`, por defecto es `submit`.
