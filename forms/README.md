@@ -5,7 +5,7 @@
 * `form` - Encierra todos los campos del formulario
 * `label` - Representa el nombre del campo
 * `input type=`
-* `text (default)` - Entrada de texto
+  * `text (default)` - Entrada de texto
   * `password` - Campo para contraseñas (No encripta, solo oculta)
   * `submit` - Botón para enviar el formulario
   * `button` - Igual que submit
@@ -30,15 +30,20 @@
 
 ### Etiquetas
 
-| `label, input` | Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.
+| Etiqueta | Descripción |
+| ------ | ------ |
+| `label, input` | Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.|
 
 ### Atributos
 
-| atributo | descripción |
+| Atributo | Descripción |
 | ------ | ------ |
-| `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto. | 
+| `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto. |
 | `password` | No encripta el texto introducido, solo lo oculta cambiándolo por asteríscos. |
 | `submit` | Envia el formulario, deja vacío los campos del formulario y recarga la página. |
 | `button` | Igual que `submit`. |
 | `image` | Igual que `submit`. Hay que añadirle el atributo `src` con la ruta de la imágen. |
 | `<button></button>` | Si no se especicfica `type`, por defecto es `submit`. |
+| `reset` | Tanto `input` como `<button type="reset"></button>` al presionarse vacían los campos del formulario. |
+| `radio` | Mientras pertenezcan al mismo campo, solo podrá tener el `checked` uno solo. |
+| `checkbox` | Contrario a `radio` perteneciendo al mismo campo, puede haber uno, más de uno o ninguno con el atributo `checked` |

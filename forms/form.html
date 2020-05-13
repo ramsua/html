@@ -18,7 +18,7 @@
         <!-- Para efectos de claridad y legibilidad se va a usar solo una de las formas -->
 
         <fieldset>
-            <legend>Input type="text"</legend>
+            <legend>type="text"</legend>
 
             <!-- Opción uno -->
             <label>
@@ -32,23 +32,24 @@
         </fieldset>
 
         <fieldset>
-            <legend>Input type="number"</legend>
+            <legend>type="number"</legend>
 
             <label for="age">Edad:</label>
             <input type="number" id="age">
         </fieldset>
 
         <fieldset>
-            <legend>Input type="password"</legend>
+            <legend>type="password"</legend>
 
             <label for="pass">Password:</label>
 
             <!-- Con los inputs de tipo password es recomendable validar en javascript y en el servidor para así reducir los ataques de seguridad -->
             <input type="password" id="pass">
         </fieldset>
+
         <fieldset>
-            <legend>Botones</legend>
-            <!-- Hay 3 formas de añadir botones en los formularios -->
+            <legend>type="submit"</legend>
+            <!-- Hay 3 formas de añadir botones de tipo submit en los formularios -->
 
             <!-- Un input de tipo submit -->
             <!-- Si no se especifica un "value" por defecto se le asigna "Enviar consulta" -->
@@ -59,6 +60,44 @@
 
             <!-- Y un boton "<button></button>" de tipo submit -->
             <button>Send form</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>type="reset"</legend>
+            <!-- Hay 3 formas de añadir botones de tipo reset en los formularios -->
+            <!-- Se debe especificar si o si, tanto si es un input o un botón -->
+
+            <!-- Un input de tipo reset -->
+            <!-- Si no se le asigna el atributo "value" por defecto muestra "Restablecer" -->
+            <input type="reset">
+
+            <!-- O un botón de tipo reset -->
+            <button type="reset">Reset</button>
+        </fieldset>
+        <fieldset>
+            <legend>type="radio"</legend>
+            <!-- Los inputs de tipo radio se utilizan para elegir una opción entre varias opciones -->
+            <!-- Son ideales en los casos que el usuario debe elegir una sola de entre varias opciones.  -->
+
+            <label for="man">Hombre</label>
+            <input type="radio" name="sex" id="man">
+
+            <label for="woman">Woman</label>
+            <input type="radio" name="sex" id="woman">
+        </fieldset>
+
+        <fieldset>
+            <legend>type="checkbox"</legend>
+            <!-- Igual que los de tipo radio, deben tener el mismo valor en el atributo "name", pero con la diferencia que aquí sí se puede elegir más de una opción de todas las disponibles, o ninguna. -->
+
+            <label for="futbol">Futbol</label>
+            <input type="checkbox" name="hobbies" id="futbol">
+
+            <label for="raceCar">Carreras de autos</label>
+            <input type="checkbox" name="hobbies" id="raceCar">
+
+            <label for="tenis">Tenis</label>
+            <input type="checkbox" name="hobbies" id="tenis">
         </fieldset>
     </form>
 </body>
