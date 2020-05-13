@@ -28,16 +28,18 @@
   * `time` - Permite seleccionar una hora
   * `url` - Crea un campo para introducir una url
 
+***
+
 ### Etiquetas
 
 | Etiqueta | Descripción |
-| ------ | ------ |
+| :------: | :------: |
 | `label, input` | Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.|
 
 ### Atributos
 
 | Atributo | Descripción |
-| ------ | ------ |
+| :------: | :------: |
 | `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto. |
 | `password` | No encripta el texto introducido, solo lo oculta cambiándolo por asteríscos. |
 | `submit` | Envia el formulario, deja vacío los campos del formulario y recarga la página. |
