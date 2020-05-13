@@ -5,7 +5,7 @@
 ### Etiquetas
 
 | Etiqueta | Descripción |
-| ------ | ------ |
+| :------: | ------ |
 | `fieldset` | Se utiliza para agrupar distintos campos los cuales semánticamente pertenecen al mismo grupo. |
 | `legend` | Se utiliza para darle un título a los campos agrupados por "fieldset". |
 | `label, input` | Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.|
@@ -20,7 +20,7 @@
 ### Atributos
 
 | Atributo | Descripción |
-| ------ | ------ |
+| :------: | ------ |
 | `name` | En cualquiera de los campos este atributo se usa para procesar los datos en el servidor. |
 | `type` | para espcificar qué tipo de input estamos usando. |
 | `boolean` | Un atributo buleano en HTML con que se defina ya se considera "true", y si no define se considera "false" |
@@ -30,7 +30,7 @@
 ### Valores de `type`
 
 | Valor | Descripción |
-| ------ | ------ |
+| :------: | ------ |
 | `text` | Entrada de texto (Atributo por defecto si no se especifica) |
 | `number` | Solamente acepta valores numéricos. |
 | `password` | Campo para contraseñas (No encripta, solo oculta) |
@@ -55,7 +55,7 @@
 ### Atributos buleanos
 
 | Atributo | Descripción |
-| ------ | ------ |
+| :------: | ------ |
 | `required` | Hace que un campo sea obligatorio. |
 | `disabled` | Desactiva la interaccion con un campo. |
 | `checked` | Marca un "radio" o "checkbox" por defecto. |
@@ -68,7 +68,7 @@
 ### Otros atributos
 
 | Atributo | Descripción |
-| ------ | ------ |
+| :------: | ------ |
 | `maxlenght minlenght` | Determina la cantidad máxima o mínima de caracteres en un campo |
 | `min/max` | Determina el mínimo y máximo en campos numñericos |
 | `autocomplete="on"\|"off"` | Se le asigna al formulario. Permite al navegador completar con los datos que tiene almacenados. "on" por defecto. |
