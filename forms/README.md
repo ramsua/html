@@ -65,4 +65,4 @@
 | ------ | ------ |
 | `maxlenght minlenght` | Determina la cantidad máxima o mínima de caracteres en un campo |
 | `min/max` | Determina el mínimo y máximo en campos numñericos |
-| `autocomplete=on|off` | (formulario) Permite al navegador completar con los datos que tiene almacenados. |
+| `autocomplete=on\|off` | (formulario) Permite al navegador completar con los datos que tiene almacenados. |
