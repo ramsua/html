@@ -71,4 +71,5 @@
 | `email` | Usa validación de HTML 5. Aunque se puede alterar el tipo de input desde el inspector, es necesario que si lo que se va a enviar es un email, el input sea de tipo email. |
 
 | `file` | Sirve para subir al servidor un archivo desde el disco duro. Para este tipo de inputs, el `form` debe tener el atributo `enctype="multipart/form-data" para para que funcione correctamente`. |
+
 | `range` | Es de valor numérico. Sirve para seleccionar una rango, debe establecerse los atributos `min` y `max`.|
