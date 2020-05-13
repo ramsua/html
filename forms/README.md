@@ -71,4 +71,5 @@
 | ------ | ------ |
 | `maxlenght minlenght` | Determina la cantidad máxima o mínima de caracteres en un campo |
 | `min/max` | Determina el mínimo y máximo en campos numñericos |
-| `autocomplete=on\|off` | (formulario) Permite al navegador completar con los datos que tiene almacenados. |
+| `autocomplete="on"\|"off"` | Se le asigna al formulario. Permite al navegador completar con los datos que tiene almacenados. "on" por defecto. |
+| `placeholder`| Establece un valor inicial y se borra al introducir información en ese campo. |
