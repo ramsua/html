@@ -214,7 +214,37 @@
         <!-- SELECT -->
         <fieldset>
             <legend>select</legend>
-            <!--  -->
+            <!-- Select muestra un desplegable donde se puede elegir una opción. -->
+            <!-- Si se necesita elegir más de una opción se le añade el atributo "multiple" -->
+            <!-- Como elemento hijo se le asigna la etiqueta "option", que a su vez se puede agrupar en otra etiqueta llamada "optgroup" -->
+            <!-- A la etiqueta "optgroup", se le añade en este caso atributo "label" para indicarle al usuario qué tipo de opciones agrupa. -->
+            
+            <label for="languajes">Lenguajes informáticos</label>
+            <select name="languajes" id="languajes">
+                <optgroup label="Lenguaje de marcado">
+                    <option value="html">HTML</option>
+                    <option value="xml">XML</option>
+                </optgroup>
+                <optgroup label="Lenguaje de diseño">
+                    <option value="css">CSS</option>
+                </optgroup>
+                <optgroup label="Lenguaje de programación">
+                    <option value="js">JS</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <!-- TEXTAREA -->
+        <fieldset>
+            <legend>textarea</legend>
+            <!-- Textarea es una etiqueta de entrada de texto plano -->
+            <!-- Está pensada para textos de mayor tamaño que los inputs -->
+            <!-- Un buen ejemplo de esto sería un formulario donde envías una carta de solicitud de empleo, en el input de tipo texto pondrías el asunto y en el textarea redactarías la solicitud como tal. -->
+
+            <!-- Por defecto su tamaño viene definidico por "cols" para el ancho y "rows" para el alto. Por CSS podemos modificar eso y también el atributo "rezise" que por defecto viene asignado en "both" -->
+
+            <label for="textarea">Textarea</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
         </fieldset>
     </form>
 </body>
