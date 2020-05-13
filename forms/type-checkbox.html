@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="checkbox"</legend>
+            <!-- Igual que los de tipo radio, deben tener el mismo valor en el atributo "name", pero con la diferencia que aquí sí se puede elegir más de una opción de todas las disponibles, o ninguna. -->
+
+            <label for="html">HTML</label>
+            <input type="checkbox" name="hobbies" id="html">
+
+            <label for="css">CSS</label>
+            <input type="checkbox" name="hobbies" id="css">
+
+            <label for="js">JS</label>
+            <input type="checkbox" name="hobbies" id="js">
+        </fieldset>
+    </form>
+</body>
+</html>

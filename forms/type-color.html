@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="color"</legend>
+            <!-- Devuelve un color como valor, lo más común es usarlo por medio javascript para capturar el color elegido por el usuario y así hacer algo con ese color. -->
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+    </form>
+</body>
+</html>

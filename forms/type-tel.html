@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="tel"</legend>
+            <!-- A nivel semántico le estamos diciendo al navegador que lo que se ingresó es un número de teléfono. Estéticamente no se nota ningún cambio, pero en movil sale el teclado numérico. -->
+
+            <label for="tel">Teléfono</label>
+            <input type="tel" name="tel" id="tel">
+        </fieldset>
+    </form>
+</body>
+</html>

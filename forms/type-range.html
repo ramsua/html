@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="range"</legend>
+            <!-- Los inputs de tipo rango muestran un slide con el que se puede elegir un valor entre un rango-->
+            <!-- Por defecto avanza de uno en uno pero si se añade el atributo "step" se le puede asignar de cuanto en cuanto se necesita que avance -->
+
+            <label for="range">Rango</label>
+            <input type="range" name="range" id="range" min="0" max="100" step="10">
+        </fieldset>
+    </form>
+</body>
+</html>

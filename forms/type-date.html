@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="date"</legend>
+            <!-- El de tipo date mostrará un calendario normal con los meses y demás, "months" con los meses y "week" un calendario con las semanas. Cada navegador tiene su manera propia de mostrar dichos calendarios, y es muy dificil estilizarlos con CSS ya que no tienen atributos accesibles desde CSS.  -->
+
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="date">
+
+            <label for="month">Meses</label>
+            <input type="month" name="month" id="month">
+
+            <label for="week">Semanas</label>
+            <input type="week" name="week" id="week">
+
+            <label for="time">Horas</label>
+            <input type="time" name="time" id="time">
+        </fieldset>
+    </form>
+</body>
+</html>

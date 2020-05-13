@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="file"</legend>
+            <!-- Este input por sí solo desde html no hace nada -->
+            <!-- Se necesita al menos javascript para ya sea enviar el archivo al servidor o mostrarlo en pantalla o lo que sea que se deba hacer con él -->
+
+            <label for="file">Subir archivo</label>
+            <input type="file" name="file" id="file">
+        </fieldset>
+    </form>
+</body>
+</html>

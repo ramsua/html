@@ -24,7 +24,7 @@
 
 ***
 
-#### Valores de `type`
+### Valores de `type`
 
 | Valor | Descripción |
 | ------ | ------ |

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="radio"</legend>
+            <!-- Los inputs de tipo radio se utilizan para elegir una opción entre varias opciones -->
+            <!-- Son ideales en los casos que el usuario debe elegir una sola de entre varias opciones.  -->
+
+            <label for="man">Hombre</label>
+            <input type="radio" name="sex" id="man">
+
+            <label for="woman">Woman</label>
+            <input type="radio" name="sex" id="woman">
+        </fieldset>
+    </form>
+</body>
+</html>

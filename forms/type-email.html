@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>type="email"</legend>
+            <!-- El input de tipo email valida que exista un @ y un .com -->
+            <!-- Pero al igual que en password, puedes acceder a las propiedades del input por medio del inspector del navegador y cambiar los atributos del input -->
+            <!-- Para evitar eso es conveniente validar por Javascript y en el Backend -->
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+    </form>
+</body>
+</html>

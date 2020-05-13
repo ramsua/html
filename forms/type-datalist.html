@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>datalist</legend>
+            <!-- Casi totalmente soportado por todos los navegadores. -->
+            <!-- Lo que hace es crear un filtro para buscar -->
+            <!-- Necesita de un input con el atributo "list" y de valor se le asigna el "id" del datalist en el que debe buscar -->
+
+            <label for="browsers">Elije un navegador</label>
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="IE">
+                <option value="Firefox">
+                <option value="Safari">
+            </datalist>
+        </fieldset>
+    </form>
+</body>
+</html>

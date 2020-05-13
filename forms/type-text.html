@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <!-- Hay dos formas de referenciar un input a un label -->
+
+        <!-- Una es encerrar el input en la etiqueta label -->
+
+        <!-- Y la otra forma es añadirle el atributo "for" a la etiqueta label y al input añadirle un id con el mismo valor del "for" del label -->
+
+        <!-- Esto es válido para todos los tipos de inputs -->
+
+        <!-- Para efectos de claridad y legibilidad se va a usar solo una de las formas -->
+
+        <!-- TIPO TEXTO -->
+        <fieldset>
+            <legend>type="text"</legend>
+
+            <!-- Opción uno -->
+            <label>
+                Nombre:
+                <input type="text">
+            </label>
+
+            <!-- Opción dos -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name">
+        </fieldset>
+    </form>
+</body>
+</html>

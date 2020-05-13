@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset{
+            margin-bottom: 1em;
+            font: 1em sans-serif;
+        }
+        legend{
+            padding: .25em;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>textarea</legend>
+            <!-- Textarea es una etiqueta de entrada de texto plano -->
+            <!-- Está pensada para textos de mayor tamaño que los inputs -->
+            <!-- Un buen ejemplo de esto sería un formulario donde envías una carta de solicitud de empleo, en el input de tipo texto pondrías el asunto y en el textarea redactarías la solicitud como tal. -->
+
+            <!-- Por defecto su tamaño viene definidico por "cols" para el ancho y "rows" para el alto. Por CSS podemos modificar eso y también el atributo "rezise" que por defecto viene asignado en "both" -->
+
+            <label for="textarea">Textarea</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
