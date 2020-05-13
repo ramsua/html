@@ -34,9 +34,9 @@
 
 ### Atributos
 
-| `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto.
-| `password` | No encripta el texto introducido, solo lo oculta cambiándolo por asteríscos.
-| `submit` | Envia el formulario, deja vacío los campos del formulario y recarga la página.
-| `button` | Igual que `submit`.
-| `image` | Igual que `submit`. Hay que añadirle el atributo `src` con la ruta de la imágen.
-| `<button></button>` | Si no se especicfica `type`, por defecto es `submit`.
+| `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto. | 
+| `password` | No encripta el texto introducido, solo lo oculta cambiándolo por asteríscos. |
+| `submit` | Envia el formulario, deja vacío los campos del formulario y recarga la página. |
+| `button` | Igual que `submit`. |
+| `image` | Igual que `submit`. Hay que añadirle el atributo `src` con la ruta de la imágen. |
+| `<button></button>` | Si no se especicfica `type`, por defecto es `submit`. |
