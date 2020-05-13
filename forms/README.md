@@ -6,6 +6,8 @@
 
 | Etiqueta | Descripción |
 | ------ | ------ |
+| `fieldset` | Se utiliza para agrupar distintos campos los cuales semánticamente pertenecen al mismo grupo. |
+| `legend` | Se utiliza para darle un título a los campos agrupados por "fieldset". |
 | `label, input` | Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.|
 | `datalist` | Crea un filtro interno de la página para buscar. Necesita un input con el atributo `list` que lleva como valor el `id` del `datalist`. |
 | `option` | Es donde se almacenan los valores a mostrar en el filtro según lo que busque el usuario. Esta etiqueta debe ser hija de la etiqueta `datalist`. y en el atributo `value` van los valores que se mostrarán según qué busque el usuario. También se utiliza como etiqueta hija en `select`.|
@@ -21,6 +23,7 @@
 | ------ | ------ |
 | `name` | En cualquiera de los campos este atributo se usa para procesar los datos en el servidor. |
 | `type` | para espcificar qué tipo de input estamos usando. |
+| `boolean` | Un atributo buleano en HTML con que se defina ya se considera "true", y si no define se considera "false" |
 
 ***
 
@@ -46,3 +49,20 @@
 | `range` | Es de valor numérico. Sirve para seleccionar una rango, debe establecerse los atributos `min` y `max`.|
 | `search` | Parece un input de tipo texto, pero a nivel semántico es distinto. |
 | `tel` | Lo mismo que "search". NO valida si es número cuando se envía el formulario. |
+
+***
+
+### Atributos buleanos
+
+| Atributo | Descripción |
+| ------ | ------ |
+| `required` | Hace que un campo sea obligatorio. |
+| `disabled` | Desactiva la interaccion con un campo. |
+| `checked` | Marca un "radio" o "checkbox" por defecto. |
+| `selected` | Marca un "option" por defecto. |
+| `autofocus` | Marca un input por defecto |
+| `readonly` | Hace que el campo sea solo de lectura |
+| ------ | ------ |
+| `maxlenght minlenght` | Determina la cantidad máxima o mínima de caracteres en un campo |
+| `min/max` | Determina el mínimo y máximo en campos numñericos |
+| `autocomplete=on|off` | (formulario) Permite al navegador completar con los datos que tiene almacenados. |
