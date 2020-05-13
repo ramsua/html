@@ -39,37 +39,20 @@
 ### Atributos
 
 | Atributo | Descripción |
-
 | ------ | ------ |
-
 | `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto. |
-
 | `number` | Solamente acepta valores numéricos. |
-
 | `password` | No encripta el texto introducido, solo lo oculta cambiándolo por asteríscos. |
-
 | `submit` | Envia el formulario, deja vacío los campos del formulario y recarga la página. |
-
 | `button` | Igual que `submit`. |
-
 | `image` | Igual que `submit`. Hay que añadirle el atributo `src` con la ruta de la imágen. |
-
 | `<button></button>` | Si no se especicfica `type`, por defecto es `submit`. |
-
 | `reset` | Tanto `<input type="reset"/>` como `<button type="reset"></button>` al presionarse vacían los campos del formulario. |
-
 | `radio` | Mientras pertenezcan al mismo campo, solo podrá tener el `checked` uno solo. Una vez marcado no se puede desmarcar. |
-
 | `checkbox` | Contrario a `radio` perteneciendo al mismo campo, puede haber uno, más de uno o ninguno con el atributo `checked` |
-
 | `date, months y week` | Muestran un calendario según qué tipo de input sea. |
-
 | `time` | Un campo para ingresar la hora. Al igual que con los campos de "date, months y week" cada navegador lo muestra de una forma u otra. |
-
 | `color` | Abre una ventana con una paleta de color donde se puede elegir un color. |
-
 | `email` | Usa validación de HTML 5. Aunque se puede alterar el tipo de input desde el inspector, es necesario que si lo que se va a enviar es un email, el input sea de tipo email. |
-
 | `file` | Sirve para subir al servidor un archivo desde el disco duro. Para este tipo de inputs, el `form` debe tener el atributo `enctype="multipart/form-data" para para que funcione correctamente`. |
-
 | `range` | Es de valor numérico. Sirve para seleccionar una rango, debe establecerse los atributos `min` y `max`.|
