@@ -5,247 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
     <style>
-        fieldset{
-            margin-bottom: 1em;
-            font: 1em sans-serif;
-        }
-        legend{
-            padding: .25em;
-            background-color: #eee;
+        body{
+            font-family: sans-serif;
         }
     </style>
 </head>
 <body>
-    <form >
-        <!-- Hay dos formas de referenciar un input a un label -->
-
-        <!-- Una es encerrar el input en la etiqueta label -->
-
-        <!-- Y la otra forma es añadirle el atributo "for" a la etiqueta label y al input añadirle un id con el mismo valor del "for" del label -->
-
-        <!-- Esto es válido para todos los tipos de inputs -->
-
-        <!-- Para efectos de claridad y legibilidad se va a usar solo una de las formas -->
-
-        <!-- TIPO TEXTO -->
-        <fieldset>
-            <legend>type="text"</legend>
-
-            <!-- Opción uno -->
-            <label>
-                Nombre:
-                <input type="text">
-            </label>
-
-            <!-- Opción dos -->
-            <label for="name">Nombre:</label>
-            <input type="text" id="name">
-        </fieldset>
-
-        <!-- TIPO NUMBER -->
-        <fieldset>
-            <legend>type="number"</legend>
-            <!-- Da igual el valor que se ingrese, mientras sea un número, las flechas que muestra por defecto este campo siempre sumarán o restarán uno al valor que ya tenga el campo -->
-
-            <label for="age">Edad:</label>
-            <input type="number" id="age">
-        </fieldset>
-
-        <!-- TIPO PASSWORD -->
-        <fieldset>
-            <legend>type="password"</legend>
-
-            <label for="pass">Password:</label>
-
-            <!-- Con los inputs de tipo password es recomendable validar en javascript y en el servidor para así reducir los ataques de seguridad -->
-            <input type="password" id="pass">
-        </fieldset>
-
-        <!-- TIPO SUBMIT -->
-        <fieldset>
-            <legend>type="submit"</legend>
-            <!-- Hay 3 formas de añadir botones de tipo submit en los formularios -->
-
-            <!-- Un input de tipo submit -->
-            <!-- Si no se especifica un "value" por defecto se le asigna "Enviar consulta" -->
-            <input type="submit" value="Send">
-
-            <!-- Un input de tipo image -->
-            <input type="image" src="#" alt="Texto alternativo">
-
-            <!-- Y un boton "<button></button>" de tipo submit -->
-            <button>Send form</button>
-        </fieldset>
-
-        <!-- TIPO RESET -->
-        <fieldset>
-            <legend>type="reset"</legend>
-            <!-- Hay 3 formas de añadir botones de tipo reset en los formularios -->
-            <!-- Se debe especificar si o si, tanto si es un input o un botón -->
-
-            <!-- Un input de tipo reset -->
-            <!-- Si no se le asigna el atributo "value" por defecto muestra "Restablecer" -->
-            <input type="reset">
-
-            <!-- O un botón de tipo reset -->
-            <button type="reset">Reset</button>
-        </fieldset>
-
-        <!-- TIPO RADIO -->
-        <fieldset>
-            <legend>type="radio"</legend>
-            <!-- Los inputs de tipo radio se utilizan para elegir una opción entre varias opciones -->
-            <!-- Son ideales en los casos que el usuario debe elegir una sola de entre varias opciones.  -->
-
-            <label for="man">Hombre</label>
-            <input type="radio" name="sex" id="man">
-
-            <label for="woman">Woman</label>
-            <input type="radio" name="sex" id="woman">
-        </fieldset>
-
-        <!-- TIPO CHECKBOX -->
-        <fieldset>
-            <legend>type="checkbox"</legend>
-            <!-- Igual que los de tipo radio, deben tener el mismo valor en el atributo "name", pero con la diferencia que aquí sí se puede elegir más de una opción de todas las disponibles, o ninguna. -->
-
-            <label for="html">HTML</label>
-            <input type="checkbox" name="hobbies" id="html">
-
-            <label for="css">CSS</label>
-            <input type="checkbox" name="hobbies" id="css">
-
-            <label for="js">JS</label>
-            <input type="checkbox" name="hobbies" id="js">
-        </fieldset>
-
-        <!-- TIPO DATE -->
-        <fieldset>
-            <legend>type="date"</legend>
-            <!-- El de tipo date mostrará un calendario normal con los meses y demás, "months" con los meses y "week" un calendario con las semanas. Cada navegador tiene su manera propia de mostrar dichos calendarios, y es muy dificil estilizarlos con CSS ya que no tienen atributos accesibles desde CSS.  -->
-
-            <label for="date">Fecha</label>
-            <input type="date" id="date" name="date">
-
-            <label for="month">Meses</label>
-            <input type="month" name="month" id="month">
-
-            <label for="week">Semanas</label>
-            <input type="week" name="week" id="week">
-
-            <label for="time">Horas</label>
-            <input type="time" name="time" id="time">
-        </fieldset>
-
-        <!-- TIPO COLOR -->
-        <fieldset>
-            <legend>type="color"</legend>
-            <!-- Devuelve un color como valor, lo más común es usarlo por medio javascript para capturar el color elegido por el usuario y así hacer algo con ese color. -->
-            <label for="color">Color</label>
-            <input type="color" name="color" id="color">
-        </fieldset>
-
-        <!-- TIPO EMAIL -->
-        <fieldset>
-            <legend>type="email"</legend>
-            <!-- El input de tipo email valida que exista un @ y un .com -->
-            <!-- Pero al igual que en password, puedes acceder a las propiedades del input por medio del inspector del navegador y cambiar los atributos del input -->
-            <!-- Para evitar eso es conveniente validar por Javascript y en el Backend -->
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </fieldset>
-
-        <!-- TIPO FILE -->
-        <fieldset>
-            <legend>type="file"</legend>
-            <!-- Este input por sí solo desde html no hace nada -->
-            <!-- Se necesita al menos javascript para ya sea enviar el archivo al servidor o mostrarlo en pantalla o lo que sea que se deba hacer con él -->
-
-            <label for="file">Subir archivo</label>
-            <input type="file" name="file" id="file">
-        </fieldset>
-
-        <!-- TIPO RANGE -->
-        <fieldset>
-            <legend>type="range"</legend>
-            <!-- Los inputs de tipo rango muestran un slide con el que se puede elegir un valor entre un rango-->
-            <!-- Por defecto avanza de uno en uno pero si se añade el atributo "step" se le puede asignar de cuanto en cuanto se necesita que avance -->
-
-            <label for="range">Rango</label>
-            <input type="range" name="range" id="range" min="0" max="100" step="10">
-        </fieldset>
-
-        <!-- TIPO SEARCH -->
-        <fieldset>
-            <legend>type="search"</legend>
-            <!-- A nivel visual en ordenadores, no se nota ningún cambio aparente, pero en movil aspecto es diferente. -->
-
-            <label for="search">Buscar</label>
-            <input type="search" name="search" id="search">
-        </fieldset>
-
-        <!-- TIPO TEL -->
-        <fieldset>
-            <legend>type="tel"</legend>
-            <!-- A nivel semántico le estamos diciendo al navegador que lo que se ingresó es un número de teléfono. Estéticamente no se nota ningún cambio, pero en movil sale el teclado numérico. -->
-
-            <label for="tel">Teléfono</label>
-            <input type="tel" name="tel" id="tel">
-        </fieldset>
-
-        <!-- DATALIST -->
-        <fieldset>
-            <legend>datalist</legend>
-            <!-- Casi totalmente soportado por todos los navegadores. -->
-            <!-- Lo que hace es crear un filtro para buscar -->
-            <!-- Necesita de un input con el atributo "list" y de valor se le asigna el "id" del datalist en el que debe buscar -->
-
-            <label for="browsers">Elije un navegador</label>
-            <input list="browsers" name="browsers">
-            <datalist id="browsers">
-                <option value="Chrome">
-                <option value="IE">
-                <option value="Firefox">
-                <option value="Safari">
-            </datalist>
-        </fieldset>
-
-        <!-- SELECT -->
-        <fieldset>
-            <legend>select</legend>
-            <!-- Select muestra un desplegable donde se puede elegir una opción. -->
-            <!-- Si se necesita elegir más de una opción se le añade el atributo "multiple" -->
-            <!-- Como elemento hijo se le asigna la etiqueta "option", que a su vez se puede agrupar en otra etiqueta llamada "optgroup" -->
-            <!-- A la etiqueta "optgroup", se le añade en este caso atributo "label" para indicarle al usuario qué tipo de opciones agrupa. -->
-            
-            <label for="languajes">Lenguajes informáticos</label>
-            <select name="languajes" id="languajes">
-                <optgroup label="Lenguaje de marcado">
-                    <option value="html">HTML</option>
-                    <option value="xml">XML</option>
-                </optgroup>
-                <optgroup label="Lenguaje de diseño">
-                    <option value="css">CSS</option>
-                </optgroup>
-                <optgroup label="Lenguaje de programación">
-                    <option value="js">JS</option>
-                </optgroup>
-            </select>
-        </fieldset>
-
-        <!-- TEXTAREA -->
-        <fieldset>
-            <legend>textarea</legend>
-            <!-- Textarea es una etiqueta de entrada de texto plano -->
-            <!-- Está pensada para textos de mayor tamaño que los inputs -->
-            <!-- Un buen ejemplo de esto sería un formulario donde envías una carta de solicitud de empleo, en el input de tipo texto pondrías el asunto y en el textarea redactarías la solicitud como tal. -->
-
-            <!-- Por defecto su tamaño viene definidico por "cols" para el ancho y "rows" para el alto. Por CSS podemos modificar eso y también el atributo "rezise" que por defecto viene asignado en "both" -->
-
-            <label for="textarea">Textarea</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        </fieldset>
-    </form>
+    <nav>
+        <ul>
+            <li><a href="./type-radio.html">Type radio</a></li>
+            <li><a href="./type-checkbox.html">Type checkbox</a></li>
+            <li><a href="./type-color.html">Type color</a></li>
+            <li><a href="./type-datalist.html">Type datalist</a></li>
+            <li><a href="./type-date.html">Type date</a></li>
+            <li><a href="./type-email.html">Type email</a></li>
+            <li><a href="./type-file.html">Type file</a></li>
+            <li><a href="./type-number.html">Type number</a></li>
+            <li><a href="./type-password.html">Type password</a></li>
+            <li><a href="./type-range.html">Type range</a></li>
+            <li><a href="./type-reset.html">Type reset</a></li>
+            <li><a href="./type-search.html">Type search</a></li>
+            <li><a href="./type-select.html">Type select</a></li>
+            <li><a href="./type-submit.html">Type submit</a></li>
+            <li><a href="./type-tel.html">Type tel</a></li>
+            <li><a href="./type-text.html">Type text</a></li>
+            <li><a href="./type-textarea.html">Type textarea</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
