@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <form action="#">
+    <form >
         <!-- Hay dos formas de referenciar un input a un label -->
 
         <!-- Una es encerrar el input en la etiqueta label -->
@@ -174,6 +174,47 @@
 
             <label for="range">Rango</label>
             <input type="range" name="range" id="range" min="0" max="100" step="10">
+        </fieldset>
+
+        <!-- TIPO SEARCH -->
+        <fieldset>
+            <legend>type="search"</legend>
+            <!-- A nivel visual en ordenadores, no se nota ningún cambio aparente, pero en movil aspecto es diferente. -->
+
+            <label for="search">Buscar</label>
+            <input type="search" name="search" id="search">
+        </fieldset>
+
+        <!-- TIPO TEL -->
+        <fieldset>
+            <legend>type="tel"</legend>
+            <!-- A nivel semántico le estamos diciendo al navegador que lo que se ingresó es un número de teléfono. Estéticamente no se nota ningún cambio, pero en movil sale el teclado numérico. -->
+
+            <label for="tel">Teléfono</label>
+            <input type="tel" name="tel" id="tel">
+        </fieldset>
+
+        <!-- DATALIST -->
+        <fieldset>
+            <legend>datalist</legend>
+            <!-- Casi totalmente soportado por todos los navegadores. -->
+            <!-- Lo que hace es crear un filtro para buscar -->
+            <!-- Necesita de un input con el atributo "list" y de valor se le asigna el "id" del datalist en el que debe buscar -->
+
+            <label for="browsers">Elije un navegador</label>
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="IE">
+                <option value="Firefox">
+                <option value="Safari">
+            </datalist>
+        </fieldset>
+
+        <!-- SELECT -->
+        <fieldset>
+            <legend>select</legend>
+            <!--  -->
         </fieldset>
     </form>
 </body>

@@ -35,6 +35,9 @@
 | Etiqueta | Descripción |
 | ------ | ------ |
 | `label, input` | Son elementos inline, aunque por css eso puede cambiar aplicando la propiedad `display: block;` o cualquier valor aceptado en la propiedad `display`.|
+| `datalist` | Crea un filtro interno de la página para buscar. Necesita un input con el atributo `list` que lleva como valor el `id` del `datalist`. |
+| `option` | Es donde se almacenan los valores a mostrar en el filtro según lo que busque el usuario. Esta etiqueta debe ser hija de la etiqueta `datalist`. y en el atributo `value` van los valores que se mostrarán según qué busque el usuario. |
+| `select` | Nos permite hacer un desplegable con distintas opciones |
 
 ### Atributos
 
@@ -54,5 +57,7 @@
 | `time` | Un campo para ingresar la hora. Al igual que con los campos de "date, months y week" cada navegador lo muestra de una forma u otra. |
 | `color` | Abre una ventana con una paleta de color donde se puede elegir un color. |
 | `email` | Usa validación de HTML 5. Aunque se puede alterar el tipo de input desde el inspector, es necesario que si lo que se va a enviar es un email, el input sea de tipo email. |
-| `file` | Sirve para subir al servidor un archivo desde el disco duro. Para este tipo de inputs, el `form` debe tener el atributo `enctype="multipart/form-data" para para que funcione correctamente`. |
+| `file` | Sirve para subir al servidor un archivo desde el disco duro. Para este tipo de inputs, el `form` debe tener el atributo `enctype="multipart/form-data"` para para que funcione correctamente. |
 | `range` | Es de valor numérico. Sirve para seleccionar una rango, debe establecerse los atributos `min` y `max`.|
+| `search` | Parece un input de tipo texto, pero a nivel semántico es distinto. |
+| `tel` | Lo mismo que `search`. NO valida si es número cuando se envía el formulario. |
