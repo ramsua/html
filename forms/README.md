@@ -62,6 +62,12 @@
 | `selected` | Marca un "option" por defecto. |
 | `autofocus` | Marca un input por defecto |
 | `readonly` | Hace que el campo sea solo de lectura |
+
+***
+
+### Otros atributos
+
+| Atributo | Descripción |
 | ------ | ------ |
 | `maxlenght minlenght` | Determina la cantidad máxima o mínima de caracteres en un campo |
 | `min/max` | Determina el mínimo y máximo en campos numñericos |
