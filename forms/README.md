@@ -34,6 +34,8 @@
 
 ### Atributos
 
+| atributo | descripción |
+| ------ | ------ |
 | `text` | Un input que no se le especifica el tipo de input que es, ya es un input de tipo texto. | 
 | `password` | No encripta el texto introducido, solo lo oculta cambiándolo por asteríscos. |
 | `submit` | Envia el formulario, deja vacío los campos del formulario y recarga la página. |
